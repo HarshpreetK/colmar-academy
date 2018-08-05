@@ -1,0 +1,134 @@
+html{
+  font-size: 16px;
+  font-family: "Roboto";
+}
+
+html div{
+  border: 1px solid black;
+}
+
+#wrapper{
+  width: 100%;
+}
+
+/* Header styles */
+header{
+
+}
+
+#logo{
+
+}
+
+#logo .logo-image{
+
+}
+
+#logo .logo-text{
+
+}
+
+#logo span{
+
+}
+
+#navigation{
+
+}
+
+nav ul{
+
+}
+
+nav ul li{
+
+}
+
+/* desktop nav */
+.desktop-nav{
+
+}
+
+
+/*mobile nav */
+.mobile-nav{
+  display: none;
+}
+
+
+
+/* Header Banner Styles */
+#banner{
+
+}
+
+#banner h1{
+
+}
+
+#banner p{
+
+}
+
+#banner span{
+
+}
+
+#banner .banner-image{
+
+}
+
+#banner .banner-image img{
+
+}
+
+#banner .banner-text{
+
+}
+
+  /*Mobile banner styles */
+
+@media screen and (max-width: 768px){
+  #banner{
+
+  }
+
+  #banner .banner-image{
+
+  }
+
+  #banner .banner-text{
+    
+  }
+
+}
+
+
+
+/* Main content */
+
+
+/* Top main content styles */
+
+
+
+   /* Aside Styles*/
+
+
+
+   /*mobile styles top main content */
+
+/* Middle main content styles */
+
+
+  /*mobile styles middle main content */
+
+
+/* Bottom Main content styles */
+
+   /*mobile styles bottom main content */
+
+
+
+
+/* Footer Styles */
