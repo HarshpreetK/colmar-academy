@@ -4,10 +4,6 @@ html{
   color: #484848;
 }
 
-html div{
-  border: 1px solid black;
-}
-
 #wrapper{
   width: 100%;
   margin: 0 auto;
@@ -21,7 +17,7 @@ h1{
 
 h2{
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 2rem;
 }
 
@@ -208,6 +204,7 @@ nav ul li a{
   flex-direction: column;
   width: 60%;
   padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .left-column img{
@@ -258,13 +255,16 @@ nav ul li a{
   flex-direction:column;
   width: 40%;
   border-left: 1px solid darkgrey;
-
 }
 
 .aside ul li{
   display: flex;
   padding-left: 1rem;
   margin-bottom: 1rem;
+}
+
+.aside a{
+  text-decoration: none;
 }
 
 .thumbnail{
@@ -280,6 +280,14 @@ nav ul li a{
 .aside .text{
   width: 65%;
   padding-right: 1.5rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: 1.5rem;
+}
+
+.aside h3{
+  font-weight: 500;
+  font-size: 1.25rem;
 }
    /*mobile styles top main content */
 
@@ -316,6 +324,7 @@ nav ul li a{
     padding-bottom: 0.75rem;
     font-weight: 500;
     color: #565656;
+    font-size: 1.25rem;
 }
 
 .middle-main-content img{
@@ -339,6 +348,7 @@ nav ul li a{
   width: 100%;
   padding-top: 2rem;
   background-color: #e6e6e6;
+  line-height: 1.5rem;
 }
 
 .bottom-content{
@@ -354,6 +364,10 @@ nav ul li a{
 .left-column video{
   width: 100%;
   height: auto;
+}
+
+.bottom-main-content .aside{
+  border: none;
 }
 
    /*mobile styles bottom main content */
