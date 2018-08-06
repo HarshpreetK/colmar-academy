@@ -52,6 +52,8 @@ header{
   font-weight: 700;
 }
 
+
+/* desktop nav */
 #navigation{
   position: fixed;
   right: 0;
@@ -72,10 +74,7 @@ nav ul li a{
   font-weight: 400;
 }
 
-/* desktop nav */
-.desktop-nav{
 
-}
 
 
 /*mobile nav */
@@ -95,22 +94,28 @@ nav ul li a{
 
   #navigation{
     width: 100%;
-    padding-left: 5%;
     margin:auto;
+    right:0;
+
 
   }
 
   .mobile-nav{
-    width: 90%;
+    width: 75%;
     display: inline-block;
-    position: fixed;
+  /*  position: fixed;
+    text-align: right;*/
+    margin-left:25%;
+  }
+
+  .mobile-nav nav{
+    padding-right: 1rem;
   }
 
   .mobile-nav nav ul{
     display: inline-flex;
     justify-content: space-between;
-    align-content: center;
-    align-items: right;
+    width: 100%;
   }
 
   #wrapper{
@@ -315,7 +320,7 @@ nav ul li a{
   font-size: 1.25rem;
 }
    /*mobile styles top main content */
-@media screen and (max-width: 560px){
+@media screen and (max-width: 660px){
 
   #main-content{
     width: 100%;
@@ -350,7 +355,7 @@ nav ul li a{
 
   .top-main-content .aside .text{
     width: 90%;
-    padding: 1rem 4rem;
+    padding: 1rem 0rem;
   }
 
   .top-main-content .aside .text h3,
@@ -374,6 +379,7 @@ nav ul li a{
     width:100%;
   }
 }
+
 /* Middle main content styles */
 .middle-main-content{
   display: flex;
@@ -424,7 +430,7 @@ nav ul li a{
 }
   /*mobile styles middle main content */
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 660px){
   .middle-main-content .link-image,
   .middle-main-content .text span,
   .middle-main-content .text p
@@ -466,8 +472,8 @@ nav ul li a{
 .middle-main-content .text {
     padding: 0;
   }
+}
 
-  
 /* Bottom Main content styles */
 .bottom-main-content{
   display: inline-flex;
@@ -498,9 +504,30 @@ nav ul li a{
 }
 
    /*mobile styles bottom main content */
+@media screen and (max-width: 660px){
+  .bottom-main-content .video{
+      width: 100%;
 
+  }
 
+  .bottom-main-content h2{
+    width: 100%;
+  }
 
+  .bottom-main-content .aside,
+  .bottom-main-content .text
+  {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .bottom-main-content .left-column{
+    width: 100%;
+    padding: 0;
+  }
+
+}
 
 /* Footer Styles */
 
@@ -536,4 +563,21 @@ nav ul li a{
 .footer-links ul li a{
     color: #484848;
     text-decoration: none;
+}
+
+/*Footer mobile */
+
+@media screen and (max-width: 660px){
+  #footer .footer-links{
+    display: none;
+  }
+
+  #footer{
+    text-align: center;
+  }
+
+  .copyright{
+    padding: 1rem 1.5rem;
+  }
+
 }
