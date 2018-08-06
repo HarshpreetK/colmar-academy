@@ -1,6 +1,6 @@
 html{
   font-size: 16px;
-  font-family: "Roboto";
+  font-family: "Roboto", "Lato", sans-serif;
 }
 
 html div{
@@ -12,15 +12,30 @@ html div{
   margin: 0 auto;
 }
 
-header,
-#banner,
+h1{
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+
+h2{
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+h3{
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+/*#banner,
 .top-main-content,
 .bottom-main-content,
 footer{
   padding-left: 24px;
   padding-right: 24px;
   margin-bottom: 32px;
-}
+}*/
 
 /* Header styles */
 header{
@@ -31,6 +46,8 @@ header{
   background-color: white;
   width: 100%;
   top:0;
+  z-index: 2;
+  padding-left: 1.5rem;
 }
 
 #logo{
@@ -53,6 +70,7 @@ header{
 
 nav ul{
   display: inline-flex;
+  padding-right: 1.5rem;
 }
 
 nav ul li{
@@ -118,33 +136,39 @@ nav ul li a{
   width: 100%;
   padding-top: 2rem;
   padding-bottom:2rem;
-  background-color: lightgrey;
+  background-color: #bfbfbf;
   justify-content: space-between;
+  z-index: 1;
 }
 
 #banner h1{
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: black;
   opacity: 0.7;
-  margin-left: 24px;
+  margin-bottom: 0.75rem;
 }
 
-#banner p{
-  font-size: 1rem;
+#banner h3{
   font-weight: 500;
   padding-top: 10px;
   line-height: 2rem;
-  opacity: 0.9;
-  margin-left: 24px;
+  margin-bottom: 0.75rem;
+  color: black;
+  opacity: 0.7;
 }
 
 #banner span{
   background-color: #3c3c3c;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
 }
 
 #banner .banner-image{
   width: 60%;
+  margin-left: 1.5rem;
 }
 
 #banner .banner-image img{
@@ -154,18 +178,23 @@ nav ul li a{
 #banner .banner-text{
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: auto 3rem auto 1.5rem;
+  width: 30%;
 }
 
   /*Mobile banner styles */
 
 @media screen and (max-width: 768px){
   #banner{
-
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 
   #banner .banner-image{
-
+    width:100%;
+    padding: 0;
+    margin: 0 auto;
   }
 
   #banner .banner-text{
@@ -177,25 +206,111 @@ nav ul li a{
 
 
 /* Main content */
+#main-content{
+  width: 100%;
+}
 
+.left-column{
+  display: flex;
+  flex-direction:column;
+  width: 60%;
+  padding-left: 1.5rem;
+}
+
+.left-column img{
+  width: 100%;
+}
+
+.left-column .text{
+  width: 100%;
+  padding: 2rem 0;
+}
 
 /* Top main content styles */
+.top-main-content{
+  display: inline-flex;
+  width: 100%;
+  padding-top: 2rem;
+  background-color: #e6e6e6;
+}
 
+.mobile-thumbnail{
+  display: none;
 
+}
 
    /* Aside Styles*/
+.aside{
+  display:flex;
+  flex-direction:column;
+  width: 40%;
+  border-left: 1px solid darkgrey;
 
+}
 
+.aside ul li{
+  display: flex;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
 
+.thumbnail{
+  width: 35%;
+  margin-right: 1rem;
+}
+
+.thumbnail img{
+  width: 100%;
+  height: auto;
+}
+
+.aside .text{
+  width: 65%;
+  padding-right: 1.5rem;
+}
    /*mobile styles top main content */
 
 /* Middle main content styles */
+.middle-main-content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
+.middle-main-content ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
+}
 
+.middle-main-content ul li{
+  width: 30%;
+}
+
+.middle-main-content h2{
+  padding: 1rem 4.5rem;
+  text-align: center;
+}
+
+.link-image{
+
+}
+
+.middle-main-content img{
+  width: 100%;
+}
   /*mobile styles middle main content */
 
 
 /* Bottom Main content styles */
+
+.left-column video{
+  width: 60%;
+  height: auto;
+}
 
    /*mobile styles bottom main content */
 
