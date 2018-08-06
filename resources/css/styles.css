@@ -9,39 +9,60 @@ html div{
 
 #wrapper{
   width: 100%;
+  margin: 0 auto;
+}
+
+header,
+#banner,
+.top-main-content,
+.bottom-main-content,
+footer{
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-bottom: 32px;
 }
 
 /* Header styles */
 header{
-
+  display: flex;
+  height: 4rem;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  top:0;
 }
 
 #logo{
-
-}
-
-#logo .logo-image{
-
-}
-
-#logo .logo-text{
-
+  display: inline-flex;
+  align-items: center;
 }
 
 #logo span{
+  height: 2rem;
+}
 
+#logo span b{
+  font-weight: 700;
 }
 
 #navigation{
-
+  position: fixed;
+  right: 0;
 }
 
 nav ul{
-
+  display: inline-flex;
 }
 
 nav ul li{
+  margin-left: 1rem;
+}
 
+nav ul li a{
+  color: #000000;
+  text-decoration: none;
+  font-weight: 400;
 }
 
 /* desktop nav */
@@ -55,35 +76,85 @@ nav ul li{
   display: none;
 }
 
+@media screen and (max-width: 768px){
+
+  .desktop-nav{
+    display: none;
+  }
+
+  .logo-text{
+      display: none;
+  }
+
+  #navigation{
+    width: 100%;
+    padding-left: 5%;
+    margin:auto;
+
+  }
+
+  .mobile-nav{
+    width: 90%;
+    display: inline-block;
+    position: fixed;
+  }
+
+  .mobile-nav nav ul{
+    display: inline-flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: right;
+  }
+
+}
 
 
-/* Header Banner Styles */
+
+
+/* Banner Styles */
 #banner{
-
+  margin-top: 4rem;
+  display: flex;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom:2rem;
+  background-color: lightgrey;
+  justify-content: space-between;
 }
 
 #banner h1{
-
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+  opacity: 0.7;
+  margin-left: 24px;
 }
 
 #banner p{
-
+  font-size: 1rem;
+  font-weight: 500;
+  padding-top: 10px;
+  line-height: 2rem;
+  opacity: 0.9;
+  margin-left: 24px;
 }
 
 #banner span{
-
+  background-color: #3c3c3c;
 }
 
 #banner .banner-image{
-
+  width: 60%;
 }
 
 #banner .banner-image img{
-
+  width: 100%;
 }
 
 #banner .banner-text{
-
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
   /*Mobile banner styles */
@@ -98,7 +169,7 @@ nav ul li{
   }
 
   #banner .banner-text{
-    
+
   }
 
 }
