@@ -425,11 +425,49 @@ nav ul li a{
   /*mobile styles middle main content */
 
 @media screen and (max-width: 600px){
-  .middle-main-content .link-image{
+  .middle-main-content .link-image,
+  .middle-main-content .text span,
+  .middle-main-content .text p
+  {
     display: none;
   }
+
+  .middle-main-content{
+    width: 100%;
+    margin:0 auto;
+    background-color: #e5e5e5;
+    border-top: 1px solid darkgrey;
+    border-bottom: 1px solid darkgrey;
+  }
+
+  .middle-main-content ul{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
 }
 
+.middle-main-content ul li {
+    margin: 1rem auto;
+    width: 90%;
+    background-color: rgba(0,0,0, 0.3);
+}
+
+.middle-main-content .text h3 {
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: rgba(0,0,0, 0.65);
+    padding-left: 1rem;
+}
+
+.middle-main-content .text {
+    padding: 0;
+  }
+
+  
 /* Bottom Main content styles */
 .bottom-main-content{
   display: inline-flex;
