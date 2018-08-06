@@ -244,6 +244,7 @@ nav ul li a{
 .left-column .text{
   width: 100%;
   padding: 2rem 0;
+  line-height: 1.5rem;
 }
 
 .left-column .text h2{
@@ -259,6 +260,7 @@ nav ul li a{
 .left-column .text span{
   font-weight: 500;
   color: #484848;
+  padding-bottom: 2rem;
 }
 
 .left-column .text p{
@@ -299,7 +301,7 @@ nav ul li a{
 
 .thumbnail{
   width: 35%;
-  margin-right: 1rem;
+  margin:1rem 1rem 1rem 0;
 }
 
 .thumbnail img{
@@ -319,6 +321,11 @@ nav ul li a{
   font-weight: 500;
   font-size: 1.25rem;
 }
+
+.top-main-content .aside ul li:last-child{
+  background-color: #bfbfbf;
+}
+
    /*mobile styles top main content */
 @media screen and (max-width: 660px){
 
@@ -368,6 +375,10 @@ nav ul li a{
   .top-main-content .aside .text span a{
     font-weight: 500;
     color: rgb(110,135,220);
+  }
+
+  .top-main-content .aside ul li:last-child{
+    background-color: #e5e5e5;
   }
 
   .mobile-thumbnail{
@@ -501,6 +512,10 @@ nav ul li a{
 
 .bottom-main-content .aside{
   border: none;
+}
+
+.bottom-main-content .aside ul li:first-child{
+  background-color: #bfbfbf;
 }
 
    /*mobile styles bottom main content */
