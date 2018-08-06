@@ -113,6 +113,10 @@ nav ul li a{
     align-items: right;
   }
 
+  #wrapper{
+    width: 100%;
+  }
+
 }
 
 
@@ -153,6 +157,7 @@ nav ul li a{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   text-align: center;
+  font-weight: 500;
 }
 
 #banner .banner-image{
@@ -178,6 +183,7 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin: 2rem auto;
   }
 
   #banner .banner-image{
@@ -187,12 +193,31 @@ nav ul li a{
   }
 
   #banner .banner-text{
+    width: 90%;
+    padding: 2rem 1rem 0 1rem;
+    margin: 0 auto;
+  }
 
+  #banner .banner-text h3{
+    padding-bottom: 1.5rem;
+  }
+
+  #banner .banner-text span{
+    background-color: #909090;
   }
 
 }
 
+@media screen and (max-width: 560px) {
+  #banner .banner-text h1{
+    font-size: 2rem;
+  }
 
+  #banner .banner-text h3{
+    font-size: 1.25rem;
+  }
+
+}
 
 /* Main content */
 #main-content{
@@ -290,7 +315,65 @@ nav ul li a{
   font-size: 1.25rem;
 }
    /*mobile styles top main content */
+@media screen and (max-width: 560px){
 
+  #main-content{
+    width: 100%;
+    margin:0 auto;
+  }
+
+  .top-main-content .left-column{
+    display: none;
+
+  }
+
+  .thumbnail{
+  display: none;
+  }
+
+  .top-main-content .aside{
+  width: 100%;
+  border: none;
+  }
+
+  .top-main-content .aside ul{
+
+  }
+
+  .top-main-content .aside ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+
+  }
+
+  .top-main-content .aside .text{
+    width: 90%;
+    padding: 1rem 4rem;
+  }
+
+  .top-main-content .aside .text h3,
+  .top-main-content .aside .text p,
+  .top-main-content .aside .text span
+  {
+    padding-left: 1rem;
+  }
+
+  .top-main-content .aside .text span a{
+    font-weight: 500;
+    color: rgb(110,135,220);
+  }
+
+  .mobile-thumbnail{
+    width: 90%;
+    display: block;
+  }
+
+  .mobile-thumbnail img{
+    width:100%;
+  }
+}
 /* Middle main content styles */
 .middle-main-content{
   display: flex;
@@ -298,6 +381,7 @@ nav ul li a{
   width: 100%;
   background-color: #c5c5c5;
   padding-bottom: 2rem;
+  line-height: 1.5rem;
 }
 
 .middle-main-content ul{
@@ -332,7 +416,7 @@ nav ul li a{
 }
 
 .middle-main-content .text{
-  padding: 1rem;
+  padding: 1rem 1.5rem 1.5rem 1rem;
 }
 
 .middle-main-content p{
@@ -340,6 +424,11 @@ nav ul li a{
 }
   /*mobile styles middle main content */
 
+@media screen and (max-width: 600px){
+  .middle-main-content .link-image{
+    display: none;
+  }
+}
 
 /* Bottom Main content styles */
 .bottom-main-content{
